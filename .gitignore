@@ -1,0 +1,18 @@
+# Compilados de Java
+*.class
+*.bluej
+*.jar
+*.war
+*.ear
+
+# Carpetas de construcción
+/build/
+/nbproject/private/
+/dist/
+
+# Configuraciones de IDEs comunes
+.idea/
+.settings/
+.project
+.classpath
+.nb-gradle/
