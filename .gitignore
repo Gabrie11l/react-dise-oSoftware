@@ -4,6 +4,7 @@
 *.jar
 *.war
 *.ear
+!lib/aspectjrt-1.9.25.1.jar
 
 # Carpetas de construcción
 /build/
