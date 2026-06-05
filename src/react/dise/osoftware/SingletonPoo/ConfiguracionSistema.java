@@ -1,4 +1,4 @@
-package react.dise.osoftware;
+package react.dise.osoftware.SingletonPoo;
 
 //Implementación de diseño Singletone en POO
 public class ConfiguracionSistema {
