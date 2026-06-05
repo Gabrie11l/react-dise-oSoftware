@@ -48,7 +48,7 @@ public class ReactDiseOSoftware {
         // Recibimos el arreglo
         ConfigPropiedad[] misConfigs = adaptador.obtenerConfiguraciones();
         
-        System.out.println("Configuraciones adaptadas exitosamente (Sin usar Maps):");
+        System.out.println("Configuraciones adaptadas exitosamente");
         for (ConfigPropiedad prop : misConfigs) {
             if (prop != null) { 
                 System.out.println(prop.getClave() + " : " + prop.getValor());
