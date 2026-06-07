@@ -16,21 +16,17 @@ import org.aspectj.lang.annotation.Pointcut;
 @Aspect 
 public class SingletonAspect {
 
-    private static ConfiguracionAOP instanciaUnica = null;
-    @Pointcut("call(react.dise.osoftware.seccionC_aop_singleton.ConfiguracionAOP.new())")
-    public void instanciacionSingleton() {}
+    private static ConfiguracionAOP instanciaUnica;
 
-    @Around("instanciacionSingleton()")
+
+    @Pointcut("call(react.dise.osoftware.sectionC_aop_singleton.ConfiguracionAOP.new())")
+    public void constructorCall() {}
+ 
+    @Around("constructorCall()")
     public Object controlarInstancia(ProceedingJoinPoint joinPoint) throws Throwable {
-        System.out.println(" Interceptada solicitud de creación ");
-        
         if (instanciaUnica == null) {
-            System.out.println("Creando la primera y única instancia ");
             instanciaUnica = (ConfiguracionAOP) joinPoint.proceed();
-        } else {
-            System.out.println("nstancia ya existente. Devolviendo la guardada");
         }
-        
         return instanciaUnica;
     }
 }

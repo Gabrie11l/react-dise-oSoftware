@@ -23,7 +23,8 @@ public class ReactDiseOSoftware {
         System.out.println("Modulo de reportes");
         ConfiguracionSistema config2 = ConfiguracionSistema.getConfig();
         config2.mostrarMensaje();
-
+        
+        System.out.println();
         //Prueba Poo Adapter
         System.out.println("---PRUEBA POO ADAPTER---");
         AnteriorConfigLect componenteViejo = new AnteriorConfigLect();
@@ -67,7 +68,8 @@ public class ReactDiseOSoftware {
         System.out.println("Modulo de reportes");
         ConfiguracionAOP confi2 = new ConfiguracionAOP();
         confi2.mostrarMensaje();
-        System.out.println("¿Son la misma instancia?: " + (config1 == config2));
+        System.out.println("¿Son la misma instancia?: " + (confi1 == confi2));
     }
     
 }
+    

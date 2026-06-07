@@ -11,7 +11,7 @@ package react.dise.osoftware.sectionC_aop_singleton;
 public class ConfiguracionAOP {
     
     public ConfiguracionAOP() {
-        System.out.println("Configuracion inicializada (Llamada al constructor)");
+        System.out.println("Configuracion inicializada ");
     }
 
     public void mostrarMensaje() {
