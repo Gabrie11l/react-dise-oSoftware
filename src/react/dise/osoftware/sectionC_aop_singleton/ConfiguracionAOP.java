@@ -8,13 +8,15 @@ package react.dise.osoftware.sectionC_aop_singleton;
  *
  * @author Jared
  */
-public class ConfiguracionAOP {
+public class ConfiguracionAOP implements IConfiguracion{
     
     public ConfiguracionAOP() {
-        System.out.println("Configuracion inicializada ");
+        System.out.println("Configuracion inicializada");
     }
 
+    @Override
     public void mostrarMensaje() {
         System.out.println("Configuracion activa");
     }
+    
 }

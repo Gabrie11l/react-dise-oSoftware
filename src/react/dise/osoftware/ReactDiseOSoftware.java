@@ -7,6 +7,8 @@ import react.dise.osoftware.AdapterPoo.ProveedorConfiguracion;
 import react.dise.osoftware.AdapterPoo.AdapterConfiguracion;
 import react.dise.osoftware.AdapterPoo.ConfigPropiedad;
 import react.dise.osoftware.sectionC_aop_singleton.ConfiguracionAOP;
+import react.dise.osoftware.sectionC_aop_singleton.IConfiguracion;
+import react.dise.osoftware.sectionC_aop_singleton.Singleton;
 
 public class ReactDiseOSoftware {
 
@@ -61,12 +63,12 @@ public class ReactDiseOSoftware {
         System.out.println("----- PRUEBA SINGLETON CON AOP -----");
         //Primer Modulo
         System.out.println("Modulo de autenticacion");
-        ConfiguracionAOP confi1 = new ConfiguracionAOP();
+        IConfiguracion confi1 = Singleton.getInstancia();
         confi1.mostrarMensaje();
         
         //Segundo modulo
         System.out.println("Modulo de reportes");
-        ConfiguracionAOP confi2 = new ConfiguracionAOP();
+        IConfiguracion confi2 = Singleton.getInstancia();
         confi2.mostrarMensaje();
         System.out.println("¿Son la misma instancia?: " + (confi1 == confi2));
     }
